@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <main className="w-full">
       <section className='h-[60vh] bg-black'>
-        <h1 className="text-[64px] text-white font-bold">Hello</h1>
+        <h1 className="text-[64px] text-white font-bold">HELLO!</h1>
       </section>
       <section className='max-w-[1200px] mx-auto my-8'>
         <h2 className="text-2xl font-semibold mb-4">주요 프로젝트</h2>
