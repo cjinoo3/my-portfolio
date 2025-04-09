@@ -26,6 +26,9 @@ export default function Home() {
         <h1 className="text-[64px] text-white font-bold">HELLO!</h1>
       </section>
       <section className='max-w-[1200px] mx-auto my-8'>
+        <Link href="/about" className="text-blue-500 underline mt-8 inline-block">
+          👉 About Me 보기
+        </Link>
         <h2 className="text-2xl font-semibold mb-4">주요 프로젝트</h2>
         <div className="grid gap-6">
           {projects.map((project) => (
