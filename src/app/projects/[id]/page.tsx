@@ -1,4 +1,3 @@
-// app/projects/[id]/page.tsx
 'use client';
 
 import { useParams } from 'next/navigation';
@@ -18,7 +17,10 @@ const projectData = {
 
 export default function ProjectDetailPage() {
   const params = useParams();
-  const project = projectData[params.id as keyof typeof projectData];
+  const id = params.id;
+
+  // 👇 문자열을 숫자로 변환
+  const project = projectData[Number(id) as keyof typeof projectData];
 
   if (!project) {
     return <p className="p-8">❌ 해당 프로젝트를 찾을 수 없습니다.</p>;
